@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search interface</title>
+</head>
+<style>
+    body {
+        font-size: 1.5rem;
+    }
+
+    input{
+        margin: 2px 4px 3px;
+    }
+    label{
+        margin-right:10px ;
+    }
+    select{ margin: 2px 4px 3px;
+
+    }
+    #printermodel {
+        display: none;
+    }
+    fieldset{ 
+        background-color: rgb(247, 241, 241);
+    }
+    form {
+        height: 40%;
+        
+    }
+    label  {
+        font-size: 1.6rem;
+    }
+    select{
+        font-size: 1.2rem;
+    }
+    input{
+        background-color: whitesmoke;
+        font-size: 1.2rem;
+        border: 1px solid red;
+        border-radius: 1px 4px 4px;
+    }
+    div {
+        margin: 12px 0px;
+        font-size: 1.9rem;
+    }
+</style>
+<body>
+    <fieldset >
+    <h2>Vikram Sarabhai Library system information</h2>
+    
+    <form action="" method="get">
+        <Div>
+        <label for="Staff_name">Staff name</label>
+        <input type="text" id="Staff_name" placeholder="Enter staff name" >
+    
+
+        <label for="ip_address">IP address</label>
+        <input type="text" id="ip_address" >
+    
+      <label for="iim_id">IIM ID:</label>
+      <input type="text" id="iim_id">
+    </Div>
+    <div>
+        <label for="Floor" >Floor:</label>
+         <select name="Floor" id="Floor">
+             <Option value="0">Ground</Option>
+                <Option value="1">First</Option>
+                    <Option value="2">Second</Option>
+                        <Option value="3">Third</Option>
+                            <Option value="4">Fourth</Option>
+    </select>
+
+
+<label for="location" >Location:</label>
+ <select name="location" id="location">
+     <Option value="acquis">Acquisition</Option>
+        <Option value="circu">Circulation</Option>
+            <Option value="cy_lab">Cyberlab</Option>
+                <Option value="database_section">Database section</Option>
+                    <Option value="r_hall">Reading hall</Option>
+                       <Option value="ref_section">Reference section</Option>
+</select>
+
+    <label for="company">Comapany</label>
+   <select name="company" id="company">
+       <option value="hp" >HP</option>
+       <option value="dell" >Dell</option>
+       <option value="lenovo" >Lenovo</option>
+   </select>
+</div>
+<div>
+<label for="processor">Processor:</label>
+   <select name="processor" id="processor">
+       <option value="i3" >i3</option>
+       <option value="i5" >i5</option>
+       <option value="E3" >Xeoran E3</option>
+   </select>
+
+<label for="RAM">RAM:</label>
+   <select name="RAM" id="RAM">
+       <option value="4gb" >4 GB</option>
+       <option value="8gb" >8 GB</option>
+       <option value="16gb" >16 GB</option>
+       <option value="32gb" >32 GB</option>
+   </select>
+
+<label for="graphic">Graphic:</label>
+   <select name="graphic" id="graphic">
+       <option value="dedicated" >Dedicated</option>
+       <option value="integrated" >Integrated</option>
+       
+   </select>
+</div>
+  
+   <div>
+
+   <label for="keyboard">Keyboard:</label>
+   <input type="radio" name="keyboard">
+   <label for="yes">Yes</label>
+   <input type="radio" name="keyboard">
+   <label for="yes">No</label>
+</div>
+
+<div>
+   <label for="mouse">Mouse:</label>
+   <input type="radio" name="mouse">
+   <label for="yes">Yes</label>
+   <input type="radio" name="mouse">
+   <label for="yes">No</label>
+</div>
+<div>
+    <label for="webcam">Webcam:</label>
+    <input type="radio" name="webcam">
+    <label for="yes">Yes</label>
+    <input type="radio" name="webcam">
+    <label for="no">No</label>
+ </div>
+
+<div>
+<label for="printer">Printer:</label>
+<input type="radio" id="printer" class="printer" name="printer" onclick="document.getElementById('printermodel').style.display='block'" >
+<label for="printer" class="printer" value="yes" >Yes</label>
+<input type="radio" name="printer"  onclick="document.getElementById('printermodel').style.display='none'">
+<label for="printer" value="no" >No</label>
+</div>
+
+<div id="printermodel">
+<label for="printer_model">Printer model:</label>
+<select name="printer_model" id="printer_model">
+    <option value="dedicated" name="printer_model" value="epson">Epson</option>
+    <option value="integrated" name="printer_model" value="canon" >Canon</option>
+    
+</select>
+
+
+</div>
+<input type="submit" class="submit_reset">
+<input type="reset" class="submit_reset">
+
+
+
+
+
+
+
+ 
+
+
+    </form>
+</fieldset>
+    
+</body>
+</html>
